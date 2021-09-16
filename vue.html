@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">
+			<p>{{age}}</p>
+			<p v-text="name"></p>
+			<input type="text" v-model="age">
+		</div>
+		<script src="./dep.js"></script>
+		<script src="watch.js"></script>
+		<script src="./compile.js"></script>
+		<script src="./observe.js"></script>
+    <script src="./vue.js"></script>
+    <script>
+      let vm=new Vue({
+      	el:'#app',
+      	data:{
+      		name:'lee',
+      		age:20,
+					msg:{
+						count:10,
+						gender:'male'
+					}
+      	}
+      })
+			vm.class="111"
+    </script>
+  </body>
+</html>
